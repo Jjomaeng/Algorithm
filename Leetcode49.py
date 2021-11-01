@@ -10,10 +10,11 @@ def groupAnagrams(s : list[str]) -> list[str]:
 
 
     for char in s:
-        #key = "".join(sorted(list(char)))
-        #groupAna[key] += [char] #헷갈린 부분
+        key = "".join(sorted(list(char)))
+        groupAna[key] += [char] #헷갈린 부분
+        
         #개선
-        groupAna["".join(sorted(char))].append(char)
+        #groupAna["".join(sorted(char))].append(char)
 
     return groupAna.values()
 
