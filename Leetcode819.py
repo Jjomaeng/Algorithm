@@ -22,7 +22,7 @@ def mostCommonWord(p : str , b : list[str]) -> str:
 
 
 
-#solution = counter 객체 사용
+#solution = counter 객체 사용/ 정규식 정확하게
 
 def solution(p : str,banned : list[str]) -> str:
     words = [word for word in re.sub(r'[^\w]',' ',p).lower().split() if word not in banned]
