@@ -73,8 +73,9 @@ def solution2(nums:list[int]) -> list[list[int]]:
                     left += 1
                 while left < right and nums[right] == nums[right -1]:
                     right += 1
-                left += 1
+                left += 1 ## 이 부분 가져가기
                 right -= 1
+
     return results
 
 
