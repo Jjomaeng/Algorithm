@@ -49,7 +49,7 @@ def compress(text,tok_len):
     return sum(len(word) + (len(str(cnt)) if cnt > 1 else 0) for word,cnt in res)
 
 def solution(text):
-    return(min(compress(text,i) for i in list(range(1,len(text)//2 +1))+[len(text)]))
+    return min(compress(text,i) for i in list(range(1,len(text)//2 +1))+[len(text)])
 
 
 print(solution(input))
