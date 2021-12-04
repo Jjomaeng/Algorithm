@@ -19,7 +19,7 @@ def my_solution(input : list[int]) ->list[int]:
     ans = list(map(mul,res))
     return ans
 
-#solution : 
+#solution : 왼쪽 곱 * 오른쪽 곱
 
 def solution(nums:list[int]) -> list[int]:
     out = []
