@@ -15,7 +15,7 @@ def my_solution(input:list[int]) -> int:
     return max(res)
 
 
-#solution
+#solution : 더 빠름
 import sys
 
 def solution(prices:list[int]) -> int:
