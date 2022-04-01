@@ -1,0 +1,22 @@
+# 문제 : 더 맵게
+
+import heapq as hq
+def solution(scoville,K):
+
+    hq.heapify(scoville)
+    answer = 0
+    while True:
+        first = hq.heappop(scoville)
+        if first >= K:
+            break
+        if len(scoville) == 0:
+            return -1
+        second = hq.heappop(scoville)
+        hq.heappush(scoville,first+second*2)
+        answer += 1
+    return answer
+
+input = [2,1,3,9,10]
+K = 7
+
+print(solution(input,K))
