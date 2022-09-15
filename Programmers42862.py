@@ -1,5 +1,3 @@
-from re import L
-
 
 def solution(n,lost,reverse):
     answer = n - len(lost)
