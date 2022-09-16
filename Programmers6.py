@@ -16,6 +16,7 @@ def calcDiff(apeach,ryan):
     return myScore - enemyScore
 
 def dfs(apeach,ryan,n,i):
+   
     global answer,max_diff
     if i == 11:
         if n != 0:
@@ -36,11 +37,13 @@ def dfs(apeach,ryan,n,i):
         ryan.append(apeach[i] + 1)
         dfs(apeach,ryan,n-apeach[i]-1,i + 1)
         ryan.pop()
+     
 
 
     ryan.append(0)
     dfs(apeach,ryan,n,i + 1)
     ryan.pop()
+
 
 def solution(n,info):
     global answer,max_diff
@@ -49,3 +52,5 @@ def solution(n,info):
         return [-1]
     answer.sort(key = lambda x : x [::-1],reverse= True)
     return answer[0]
+
+solution(5,[2,1,1,1,0,0,0,0,0,0,0])
