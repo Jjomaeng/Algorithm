@@ -1,9 +1,3 @@
-def solution(input):
-    input.sort()
-    answer = 0
-    for i in range(len(input)//2):
-        answer += min(input[i*2],input[(i*2)+1])
+input = {'urls': 'uploads/KakaoTalk_Photo_2021-11-08-13-38-11.jpeg', 'titles': 'dfdf', 'texts': 'fgfgfgf', 'dates': '2022-10-17'}
 
-    return answer
-input = [1,4,2,3,5,6]
-print(solution(input))
+print(input['dates'])
